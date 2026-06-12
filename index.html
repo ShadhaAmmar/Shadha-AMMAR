@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chadha Ammar | Portfolio VR/AR, Jeu Vidéo & Systèmes IA</title>
+  <meta name="description" content="Portfolio de Chadha Ammar, étudiante en génie logiciel spécialisée en Réalité Virtuelle/Augmentée, développement de jeux vidéo et intelligence artificielle.">
+  
+  <!-- Google Fonts: Space Grotesk (Tech/Modern headers) & Inter (Clean readable body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Elements de fond décoratifs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">CHADHA.AMMAR<span>//</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">Profil</a></li>
+        <li><a href="#benevolat">Bénévolat</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#education">Formation</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Changer de thème">
+          <!-- Sun Icon (visible in Dark Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <!-- Moon Icon (visible in Light Mode / Default) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+        <a href="mailto:chadha.ammar@etudiant-isi.utm.tn" class="cta-btn nav-cta">Me Contacter</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    
+    <!-- Section Profil / Hero -->
+    <section id="about" class="section hero-section">
+      <div class="hero-container">
+        <div class="hero-info">
+          <div class="badge-status">
+            <span class="pulse-dot"></span> Disponible pour un Stage d'Été 2026
+          </div>
+          <h1 class="hero-name">Chadha Ammar</h1>
+          <h2 class="hero-title">Étudiante en Génie Logiciel <span>| VR/AR, Jeu Vidéo & Systèmes IA</span></h2>
+          <p class="hero-profile-text">
+            Passionnée par les technologies immersives, j'ai une expérience pratique dans le développement VR/AR sous Unity, la modélisation 3D et les systèmes intégrant l'IA. Je recherche un stage d'été pour concevoir des projets éducatifs et immersifs innovants, à l'intersection du jeu vidéo et de l'intelligence artificielle.
+          </p>
+          
+          <div class="contact-grid">
+            <a href="mailto:chadha.ammar@etudiant-isi.utm.tn" class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <div class="contact-details">
+                <span class="contact-label">E-mail</span>
+                <span class="contact-value">chadha.ammar@etudiant-isi.utm.tn</span>
+              </div>
+            </a>
+            
+            <a href="tel:+21656510089" class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <div class="contact-details">
+                <span class="contact-label">Téléphone</span>
+                <span class="contact-value">+216 56 510 089</span>
+              </div>
+            </a>
+
+            <div class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div class="contact-details">
+                <span class="contact-label">Localisation</span>
+                <span class="contact-value">Ariana, Tunisie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-avatar-area">
+          <div class="avatar-frame-wrapper">
+            <div class="avatar-scanner-line"></div>
+            <div class="avatar-frame">
+              <img src="shadha.png" alt="Chadha Ammar" class="avatar-img" id="profile-avatar">
+            </div>
+            <!-- HUD elements -->
+            <div class="hud-box hud-top-left"></div>
+            <div class="hud-box hud-top-right"></div>
+            <div class="hud-box hud-bottom-left"></div>
+            <div class="hud-box hud-bottom-right"></div>
+            <div class="hud-ticks">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Bénévolat -->
+    <section id="benevolat" class="section benevolat-section">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <span class="section-tag">// ENGAGEMENT_CITOYEN</span>
+          <h2 class="section-title">Bénévolat & Impact</h2>
+        </div>
+        <p class="section-desc">Découvrez mon parcours associatif et mon engagement citoyen à travers mes activités de bénévolat.</p>
+      </div>
+      
+      <div class="benevolat-container glass-card">
+        <div class="benevolat-video-wrapper">
+          <video src="Benevolat.mp4" controls class="benevolat-video"></video>
+        </div>
+        <div class="benevolat-details">
+          <h3 class="benevolat-title font-space">Engagement LEO Club</h3>
+          <p class="benevolat-text">En tant que membre active du LEO Club El Kantaoui (Alpha de 2019 à 2021 puis Omega de 2022 à 2024), j'ai contribué activement à l'organisation de nombreuses actions humanitaires, d'aide sociale et de protection de l'environnement.</p>
+          <p class="benevolat-text">Cette vidéo illustre notre esprit d'équipe, le leadership sur le terrain et l'impact direct de nos projets solidaires, renforçant des compétences humaines clés telles que la gestion d'équipe, la communication et l'empathie.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets (Terminal de Projets) -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <span class="section-tag">// SELECTION_PROJET</span>
+          <h2 class="section-title">Terminal de Projets</h2>
+        </div>
+        <p class="section-desc">Cliquez sur l'icône d'un système pour charger sa démo, ses spécifications techniques et son descriptif.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1. VR Shooting Gallery -->
+        <button class="project-icon-card" data-dialog-target="dialog-vr-shooting">
+          <div class="icon-inner vr-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v6M12 16v6M3 12h6M15 12h9" />
+            </svg>
+          </div>
+          <span class="project-card-title">VR Shooting Gallery</span>
+          <span class="project-card-subtitle">Jeu & XR</span>
+        </button>
+
+        <!-- 2. AR Animal Card Experience -->
+        <button class="project-icon-card" data-dialog-target="dialog-ar-animal">
+          <div class="icon-inner ar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9M14 9l-4 4-2-2" />
+              <circle cx="17" cy="15" r="1.5" />
+              <path d="m14 18 2.5-3 2.5 3h-5z" />
+            </svg>
+          </div>
+          <span class="project-card-title">AR Animal Cards</span>
+          <span class="project-card-subtitle">Jeu & XR</span>
+        </button>
+
+        <!-- 3. Matrix-Inspired 3D Scene -->
+        <button class="project-icon-card" data-dialog-target="dialog-matrix-scene">
+          <div class="icon-inner matrix-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <code style="font-family: monospace; font-size: 8px; font-weight: bold; fill: currentColor;"><text x="2" y="10">01</text><text x="12" y="16">10</text><text x="4" y="22">11</text></code>
+              <path d="M2 2v20h20V2H2zm18 18H4V4h16v16z" />
+            </svg>
+          </div>
+          <span class="project-card-title">Scène 3D Matrix</span>
+          <span class="project-card-subtitle">3D & Visuel</span>
+        </button>
+
+        <!-- 4. Jujutsu Kaisen 3D Scene -->
+        <button class="project-icon-card" data-dialog-target="dialog-jujutsu-scene">
+          <div class="icon-inner jujutsu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 2.8 1.1 5.3 3 7.1L12 12V2z" />
+              <path d="M12 2v10l7 7.1c1.9-1.8 3-4.3 3-7.1 0-5.5-4.5-10-10-10z" />
+              <path d="M12 12l-5.5 5.5c3 3 8 3 11 0L12 12z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <span class="project-card-title">Scène 3D Jujutsu</span>
+          <span class="project-card-subtitle">3D & Visuel</span>
+        </button>
+
+        <!-- 5. 2D Platformer Video Game -->
+        <button class="project-icon-card" data-dialog-target="dialog-jeu2d">
+          <div class="icon-inner game-2d-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 12h4M8 10v4M15 11h.01M18 13h.01" />
+              <rect x="2" y="6" width="20" height="12" rx="3" />
+            </svg>
+          </div>
+          <span class="project-card-title">Jeu Plateforme 2D</span>
+          <span class="project-card-subtitle">Jeu Vidéo</span>
+        </button>
+
+        <!-- 6. 3D Platformer Video Game -->
+        <button class="project-icon-card" data-dialog-target="dialog-jeu3d">
+          <div class="icon-inner game-3d-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <span class="project-card-title">Jeu Plateforme 3D</span>
+          <span class="project-card-subtitle">Jeu Vidéo</span>
+        </button>
+
+        <!-- 7. Smart Traffic System -->
+        <button class="project-icon-card" data-dialog-target="dialog-traffic">
+          <div class="icon-inner traffic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="2" width="8" height="20" rx="4" />
+              <circle cx="12" cy="7" r="2" fill="currentColor" />
+              <circle cx="12" cy="12" r="2" />
+              <circle cx="12" cy="17" r="2" />
+              <path d="M4 12h4M16 12h4" />
+            </svg>
+          </div>
+          <span class="project-card-title">Trafic Intelligent AI</span>
+          <span class="project-card-subtitle">IA & Vision</span>
+        </button>
+
+        <!-- 8. PeepChat Intelligent System -->
+        <button class="project-icon-card" data-dialog-target="dialog-peepchat">
+          <div class="icon-inner peepchat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              <path d="M8 10h.01M12 10h.01M16 10h.01" />
+            </svg>
+          </div>
+          <span class="project-card-title">Système PeepChat</span>
+          <span class="project-card-subtitle">IA Conversationnelle</span>
+        </button>
+
+        <!-- 9. Projet de Fin d'Études (PFE) -->
+        <button class="project-icon-card" data-dialog-target="dialog-pfe">
+          <div class="icon-inner pfe-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 3H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z" />
+              <path d="M8 21h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-3" />
+              <path d="M7 8l-3 3 3 3" />
+              <path d="M17 16l3-3-3-3" />
+            </svg>
+          </div>
+          <span class="project-card-title">PFE — ISS4U</span>
+          <span class="project-card-subtitle">Intégration & Middleware</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section Compétences (Technical Matrix) -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <span class="section-tag">// ENVIRONNEMENT_DEV</span>
+          <h2 class="section-title">Matrice des Compétences</h2>
+        </div>
+        <p class="section-desc">Cartographie de mes capacités techniques à travers la VR/AR, la modélisation 3D, l'Intelligence Artificielle et le workflow de développement.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Jeu & XR -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <span class="category-icon text-cyan">✦</span> Développement Jeu & XR
+          </h3>
+          <div class="skills-list">
+            <div class="skill-pill">Unity</div>
+            <div class="skill-pill">C#</div>
+            <div class="skill-pill">Oculus Meta Quest 2</div>
+            <div class="skill-pill">Vuforia (AR)</div>
+            <div class="skill-pill">VR/AR Interaction Design</div>
+            <div class="skill-pill">Physique des Jeux</div>
+            <div class="skill-pill">Contrôles d'Animation 2D/3D</div>
+          </div>
+        </div>
+
+        <!-- 3D & Visuel -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <span class="category-icon text-purple">✦</span> Conception 3D & Visuelle
+          </h3>
+          <div class="skills-list">
+            <div class="skill-pill">Blender</div>
+            <div class="skill-pill">Modélisation 3D</div>
+            <div class="skill-pill">Rigging de Personnages</div>
+            <div class="skill-pill">Animation</div>
+            <div class="skill-pill">Textures & UV Mapping</div>
+            <div class="skill-pill">Mise en Lumière</div>
+          </div>
+        </div>
+
+        <!-- IA & Données -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <span class="category-icon text-green">✦</span> Systèmes IA & Données
+          </h3>
+          <div class="skills-list">
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">YOLOv8</div>
+            <div class="skill-pill">OpenCV</div>
+            <div class="skill-pill">PyTorch</div>
+            <div class="skill-pill">Filtre de Kalman</div>
+            <div class="skill-pill">Machine Learning</div>
+            <div class="skill-pill">Authentification Vocale</div>
+            <div class="skill-pill">IA Conversationnelle</div>
+            <div class="skill-pill">Génération d'Avatars (GAN)</div>
+            <div class="skill-pill">Whisper & SpeechBrain</div>
+            <div class="skill-pill">LLaMA 3.1 & APIs</div>
+          </div>
+        </div>
+
+        <!-- Workflow de dev -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <span class="category-icon text-blue">✦</span> Flux de Travail & Dev
+          </h3>
+          <div class="skills-list">
+            <div class="skill-pill">Git</div>
+            <div class="skill-pill">GitHub</div>
+            <div class="skill-pill">Intégration Odoo</div>
+            <div class="skill-pill">Spring Boot</div>
+            <div class="skill-pill">Angular</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expérience Professionnelle -->
+    <section id="experience" class="section experience-section">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <span class="section-tag">// HISTORIQUE_ARCHIVES</span>
+          <h2 class="section-title">Expérience Professionnelle</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <!-- ISS4U 2025 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="exp-job">Stagiaire en Génie Logiciel</h3>
+                <h4 class="exp-company">ISS4U</h4>
+              </div>
+              <span class="timeline-date">Juillet 2025 – Août 2025</span>
+            </div>
+            <p class="timeline-loc">Tunisie</p>
+            <ul class="exp-bullets">
+              <li>Déploiement et configuration du paquet d'intégration Mediboard.</li>
+              <li>Intégration sécurisée des fonctionnalités de prise de rendez-vous médicaux au sein d'une interface web moderne sous Spring Boot et Angular.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ISS4U 2024 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="exp-job">Stagiaire en Génie Logiciel (Projet de Fin d'Études)</h3>
+                <h4 class="exp-company">ISS4U</h4>
+              </div>
+              <span class="timeline-date">Février 2024 – Mai 2024</span>
+            </div>
+            <p class="timeline-loc">Tunisie</p>
+            <ul class="exp-bullets">
+              <li>Conception et développement d'une synchronisation bidirectionnelle de données entre l'ERP/CRM Odoo et une application externe Spring Boot.</li>
+              <li>Création de panneaux clients sous Angular pour l'interaction utilisateur avec les bases de données de l'institut médical.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation & Diplômes -->
+    <section id="education" class="section education-section">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <span class="section-tag">// PARCOURS_ACADEMIQUE</span>
+          <h2 class="section-title">Formation & Diplômes</h2>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <!-- ISI -->
+        <div class="edu-card glass-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+            </svg>
+          </div>
+          <div class="edu-details">
+            <span class="edu-date">2024 – 2026</span>
+            <h3 class="edu-degree">Diplôme d'Ingénieur en Génie Logiciel</h3>
+            <h4 class="edu-school">Institut Supérieur d'Informatique (ISI)</h4>
+            <span class="edu-location">Tunis, Tunisie</span>
+          </div>
+        </div>
+
+        <!-- ISITCOM -->
+        <div class="edu-card glass-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+            </svg>
+          </div>
+          <div class="edu-details">
+            <span class="edu-date">2021 – 2024</span>
+            <h3 class="edu-degree">Licence en Technologies de l'Informatique et du Multimédia</h3>
+            <h4 class="edu-school">ISITCOM</h4>
+            <span class="edu-location">Hammam Sousse, Tunisie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-lang-grid">
+        <!-- Certifications -->
+        <div class="certs-card glass-card">
+          <h3 class="card-title-icon font-space">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline-icon text-cyan">
+              <circle cx="12" cy="8" r="7" />
+              <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
+            </svg>
+            Certifications
+          </h3>
+          <ul class="cert-list">
+            <li>
+              <a href="Ammar-Chadha.pdf" target="_blank" class="cert-link">
+                <span class="cert-date">Décembre 2025</span>
+                <span class="cert-name">Fondations de l'IA et du Machine Learning <svg class="cert-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+                <span class="cert-issuer">CDOSS</span>
+              </a>
+            </li>
+            <li>
+              <a href="cisco.png" target="_blank" class="cert-link">
+                <span class="cert-date">Septembre 2025</span>
+                <span class="cert-name">Essentiels de l'Analyse de Données <svg class="cert-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+                <span class="cert-issuer">Cisco</span>
+              </a>
+            </li>
+            <li>
+              <a href="Chadha-Ammar.pdf" target="_blank" class="cert-link">
+                <span class="cert-date">Mai 2025</span>
+                <span class="cert-name">Python pour la Science des Données <svg class="cert-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+                <span class="cert-issuer">CDOSS</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Langues & Bénévolat -->
+        <div class="lang-extra-card glass-card">
+          <h3 class="card-title-icon font-space">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline-icon text-purple">
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+            Langues & Engagement
+          </h3>
+          <div class="lang-section">
+            <h4 class="sub-label">Langues</h4>
+            <div class="lang-pills">
+              <span class="lang-pill"><strong>Arabe</strong> (Maternelle)</span>
+              <span class="lang-pill"><strong>Français</strong> (Courant)</span>
+              <span class="lang-pill"><strong>Anglais</strong> (Courant)</span>
+            </div>
+          </div>
+          <div class="extra-section">
+            <h4 class="sub-label">Engagement LEO Club</h4>
+            <ul class="extra-list">
+              <li>
+                <span class="extra-role">Bénévole</span>
+                <span class="extra-org">Leo Club El Kantaoui Omega</span>
+                <span class="extra-years">2022 – 2024</span>
+              </li>
+              <li>
+                <span class="extra-role">Bénévole</span>
+                <span class="extra-org">Leo Club El Kantaoui Alpha</span>
+                <span class="extra-years">2019 – 2021</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Chadha Ammar. Conçu pour l'exploration de la VR/AR, du Jeu Vidéo et de l'IA.</p>
+      <div class="footer-indicator">
+        <span class="terminal-prompt">&gt;</span> <span class="blink">_</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODALS TERMINAUX DE PROJETS OVERLAYS -->
+  <!-- ========================================================================= -->
+
+  <!-- 1. VR Shooting Gallery Modal -->
+  <dialog id="dialog-vr-shooting" class="project-dialog" closedby="any" aria-labelledby="title-vr-shooting">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="Testing VR.mp4" poster="VR.png" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Expérience XR</span>
+          <h3 id="title-vr-shooting" class="dialog-project-title">VR Shooting Gallery</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Oculus Meta Quest 2</span>
+            <span class="tech-tag">Réalité Virtuelle</span>
+            <span class="tech-tag">Audio Spatial</span>
+          </div>
+          <div class="dialog-body">
+            <p>Une expérience immersive de tir sur cible en réalité virtuelle développée spécifiquement pour le casque autonome Oculus Meta Quest 2. L'application intègre pleinement le suivi des contrôleurs pour permettre aux joueurs de manipuler, viser et faire feu de manière réaliste dans un stand de tir virtuel.</p>
+            <p>Les mécaniques principales intègrent des calculs physiques de collision de projectiles en temps réel, un retour audio spatialisé en 3D pour la localisation auditive des cibles, et un algorithme de score indexé sur la précision du tir et l'éloignement de la cible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. AR Animal Card Experience Modal -->
+  <dialog id="dialog-ar-animal" class="project-dialog" closedby="any" aria-labelledby="title-ar-animal">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <img src="AR.png" alt="AR Animal Cards Preview" class="dialog-image">
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Application Mobile AR</span>
+          <h3 id="title-ar-animal" class="dialog-project-title">AR Animal Card Experience</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">Vuforia</span>
+            <span class="tech-tag">Réalité Augmentée</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Mobile</span>
+          </div>
+          <div class="dialog-body">
+            <p>Une application éducative mobile en réalité augmentée qui reconnaît des cartes physiques illustrées d'animaux (flashcards) à l'aide de marqueurs visuels d'image. Une fois la carte analysée par l'appareil photo, l'application projette des modèles 3D d'animaux animés directement sur la surface physique.</p>
+            <p>Le système lance des lectures audio d'ambiances sonores animales, des voix explicatives et affiche des anecdotes aléatoires sur les espèces. Conçu comme un outil pédagogique interactif et stimulant pour le jeune public.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 3. Matrix-Inspired 3D Scene Modal -->
+  <dialog id="dialog-matrix-scene" class="project-dialog" closedby="any" aria-labelledby="title-matrix-scene">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="matrix.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Création 3D</span>
+          <h3 id="title-matrix-scene" class="dialog-project-title">Scène 3D Inspirée de Matrix</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Blender</span>
+            <span class="tech-tag">Modélisation 3D</span>
+            <span class="tech-tag">Rigging</span>
+            <span class="tech-tag">Animation</span>
+          </div>
+          <div class="dialog-body">
+            <p>Une reconstitution 3D numérique fidèle de l'esthétique cyberpunk iconique de l'univers Matrix. Les environnements complets ont été modélisés de zéro sous Blender, exploitant des textures de matériaux complexes et des générateurs de particules de pluie de code numérique verte.</p>
+            <p>Ce projet met l'accent sur le travail de modélisation anatomique de personnages, le rigging d'armatures squelettiques détaillées, et la conception d'animations d'avatar fluides simulant des déplacements dynamiques et d'esquive de combat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 4. Jujutsu Kaisen 3D Scene Modal -->
+  <dialog id="dialog-jujutsu-scene" class="project-dialog" closedby="any" aria-labelledby="title-jujutsu-scene">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="Jujutsu.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Environnement 3D Stylisé</span>
+          <h3 id="title-jujutsu-scene" class="dialog-project-title">Scène 3D Inspirée de Jujutsu Kaisen</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Blender</span>
+            <span class="tech-tag">Modélisation 3D</span>
+            <span class="tech-tag">Rigging</span>
+            <span class="tech-tag">Toon Shading</span>
+            <span class="tech-tag">Animation</span>
+          </div>
+          <div class="dialog-body">
+            <p>Une scène 3D immersive et artistique sous Blender reproduisant le style visuel de l'anime Jujutsu Kaisen. Intègre des modélisations de personnages originaux disposant de rigs squelettiques flexibles adaptés aux poses d'action exagérées caractéristiques.</p>
+            <p>Un travail approfondi a été mené sur les rendus de shaders stylisés (cell shading) et la modélisation volumétrique d'auras d'énergie maudite grâce à des textures émissives combinées au node editor du compositeur Blender.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 5. 2D Platformer Video Game Modal -->
+  <dialog id="dialog-jeu2d" class="project-dialog" closedby="any" aria-labelledby="title-jeu2d">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="jeu2D.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Jeu Vidéo 2D</span>
+          <h3 id="title-jeu2d" class="dialog-project-title">Jeu Vidéo de Plateforme 2D</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Physique 2D</span>
+            <span class="tech-tag">Sprite Animation</span>
+            <span class="tech-tag">Game Design</span>
+          </div>
+          <div class="dialog-body">
+            <p>Un jeu de plateforme 2D à défilement latéral classique développé sous Unity. Il implémente un contrôleur de personnage réactif supportant les double-sauts, la glissade murale, des collisions précises sur des calques de tuiles (tilemaps), et des transitions d'animations de sprites adaptées (course, saut, chute).</p>
+            <p>Les mécaniques incluent des objets collectables (gemmes), des déclencheurs de porte interactifs, des pièges à pics mobiles et des patrouilles d'ennemis scriptées par IA en C#.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 6. 3D Platformer Video Game Modal -->
+  <dialog id="dialog-jeu3d" class="project-dialog" closedby="any" aria-labelledby="title-jeu3d">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="jeu3D.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // Jeu Vidéo 3D</span>
+          <h3 id="title-jeu3d" class="dialog-project-title">Jeu Vidéo de Plateforme 3D</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Animations 3D</span>
+            <span class="tech-tag">Physique RigidBody</span>
+            <span class="tech-tag">Contrôleur Caméra</span>
+          </div>
+          <div class="dialog-body">
+            <p>Un jeu d'action-plateforme 3D moderne conçu sous Unity. Il intègre un contrôleur de personnage à la troisième personne avec un arbre de locomotion complexe, une physique de sauts personnalisée, des mécaniques de dash aérien et un module caméra intelligent évitant activement les collisions d'obstacles.</p>
+            <p>Met en valeur la conception verticale de niveaux, des plateformes rotatives instables, des énigmes basées sur la physique des objets et une interface globale de jeu polie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 7. Smart Traffic System Modal -->
+  <dialog id="dialog-traffic" class="project-dialog" closedby="any" aria-labelledby="title-traffic">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container dual-video-container">
+          <!-- Onglets vidéo -->
+          <div class="video-tab-nav">
+            <button class="video-tab-btn active" data-video-index="0">Démo du Projet</button>
+            <button class="video-tab-btn" data-video-index="1">Rapport d'Analyse IA</button>
+          </div>
+          <div class="video-tab-panel active" id="traffic-panel-0">
+            <video src="demo.mp4" controls class="dialog-video"></video>
+          </div>
+          <div class="video-tab-panel" id="traffic-panel-1">
+            <video src="output_traffic_ai.mp4" controls class="dialog-video"></video>
+          </div>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Personnel // IA & Vision Industrielle</span>
+          <h3 id="title-traffic" class="dialog-project-title">Système de Trafic Intelligent</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Filtre de Kalman</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Suivi d'Objets</span>
+          </div>
+          <div class="dialog-body">
+            <p>Un pipeline complet d'analyse et de surveillance du flux routier urbain en temps réel basé sur des architectures de vision par ordinateur modernes. Le système met en œuvre <strong>YOLOv8</strong> pour localiser et catégoriser les véhicules (voitures, camions, bus, motos) couplé à un <strong>Filtre de Kalman</strong> pour le suivi multiobjet résistant aux masquages.</p>
+            <p>Calcule la vitesse estimée de chaque unité, analyse l'occupation des voies, produit des scores d'embouteillages et génère des cartes thermiques de densité. Utilisez les onglets ci-dessus pour passer du flux vidéo brut à la visualisation des métadonnées analytiques de l'IA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 8. PeepChat Conversational System Modal -->
+  <dialog id="dialog-peepchat" class="project-dialog" closedby="any" aria-labelledby="title-peepchat">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="Peep.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet Académique // Agent IA Conversationnel</span>
+          <h3 id="title-peepchat" class="dialog-project-title">PeepChat — Système Conversationnel</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Avatar GAN</span>
+            <span class="tech-tag">Whisper (STT)</span>
+            <span class="tech-tag">SpeechBrain</span>
+            <span class="tech-tag">ECAPA-TDNN</span>
+            <span class="tech-tag">LLaMA 3.1 8B</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+          <div class="dialog-body">
+            <p>PeepChat est un agent d'échange intelligent combinant traitement automatique de la parole, biométrie vocale et rendu graphique adaptatif. Le système effectue une authentification biométrique de l'interlocuteur via des modèles **SpeechBrain ECAPA-TDNN**, puis transcrit les paroles via **OpenAI's Whisper**.</p>
+            <p>Les réponses contextuelles sont générées par **Groq LLaMA 3.1 8B-Instant**, pilotant ensuite un réseau génératif de type **GAN** entraîné sur mesure pour produire des avatars animés et synchronisés sur le mouvement des lèvres (lip-sync) calculés par OpenCV, NumPy et Pillow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 9. Projet de Fin d'Études (PFE) Modal -->
+  <dialog id="dialog-pfe" class="project-dialog" closedby="any" aria-labelledby="title-pfe">
+    <div class="dialog-wrapper">
+      <button class="dialog-close-btn" aria-label="Fermer le dialogue">&times;</button>
+      <div class="dialog-grid">
+        <div class="dialog-media-container">
+          <video src="PFE.mp4" controls class="dialog-video"></video>
+        </div>
+        <div class="dialog-details">
+          <span class="dialog-project-type">Projet de Fin d'Études // ISS4U</span>
+          <h3 id="title-pfe" class="dialog-project-title">PFE — Synchronisation Odoo & Spring Boot / Angular</h3>
+          <div class="dialog-tech-tags">
+            <span class="tech-tag">Odoo ERP</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">API REST</span>
+            <span class="tech-tag">Synchronisation</span>
+          </div>
+          <div class="dialog-body">
+            <p>Ce projet de fin d'études (PFE) a été réalisé au sein d'ISS4U dans le but de concevoir et d'intégrer un système robuste de synchronisation du flux de données entre l'ERP/CRM Odoo et une application Spring Boot servant de middleware.</p>
+            <p>La solution permet d'assurer la cohérence et l'acheminement sécurisé des dossiers au sein de l'institut médical. L'application intègre également un tableau de bord moderne développé sous Angular pour le suivi des transactions et interactions par les utilisateurs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>
