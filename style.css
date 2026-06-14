@@ -2,56 +2,7 @@
    DESIGN SYSTEM & VARIABLES
    ========================================================================= */
 :root {
-  /* LIGHT MODE DEFAULTS (Rose, Violet, Blue, Teal) */
-  --bg-base: hsl(340, 25%, 96%);
-  --bg-surface: hsl(340, 15%, 92%);
-  --bg-card: hsla(340, 15%, 98%, 0.7);
-  --bg-card-hover: hsla(340, 15%, 98%, 0.92);
-  --border-glass: rgba(0, 0, 0, 0.08);
-  
-  --text-main: hsl(222, 47%, 12%);
-  --text-muted: hsl(222, 20%, 36%);
-  --text-dim: hsl(222, 15%, 54%);
-  
-  /* Theme Accent Colors */
-  --color-rose: hsl(330, 85%, 58%);
-  --color-violet: hsl(270, 80%, 60%);
-  --color-blue: hsl(215, 85%, 55%);
-  --color-teal: hsl(175, 75%, 38%);
-  
-  /* RGB values for transparent overlays */
-  --color-rose-rgb: 236, 72, 153;
-  --color-violet-rgb: 139, 92, 246;
-  --color-blue-rgb: 59, 130, 246;
-  --color-teal-rgb: 13, 148, 136;
-  
-  /* Mapped roles */
-  --color-primary: var(--color-rose);
-  --color-secondary: var(--color-violet);
-  --color-success: var(--color-teal);
-  --color-info: var(--color-blue);
-  
-  /* Neon border styles */
-  --border-neon-cyan: rgba(236, 72, 153, 0.2);
-  --border-neon-purple: rgba(139, 92, 246, 0.2);
-  --border-neon-green: rgba(13, 148, 136, 0.2);
-  
-  --nav-bg: rgba(255, 255, 255, 0.75);
-  --dialog-bg: rgba(255, 255, 255, 0.98);
-  --glow-opacity: 0.06;
-  --grid-color: rgba(0, 0, 0, 0.015);
-  
-  /* Fonts */
-  --font-space: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  
-  /* Transitions */
-  --transition-speed: 0.3s;
-  --transition-bezier: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-[data-theme="dark"] {
-  /* DARK MODE OVERRIDES */
+  /* DARK MODE DEFAULTS (Rose, Violet, Blue, Teal) */
   --bg-base: hsl(222, 47%, 7%);
   --bg-surface: hsl(222, 47%, 11%);
   --bg-card: hsla(222, 47%, 16%, 0.6);
@@ -74,6 +25,12 @@
   --color-blue-rgb: 96, 165, 250;
   --color-teal-rgb: 45, 212, 191;
   
+  /* Mapped roles */
+  --color-primary: var(--color-rose);
+  --color-secondary: var(--color-violet);
+  --color-success: var(--color-teal);
+  --color-info: var(--color-blue);
+  
   /* Neon border styles */
   --border-neon-cyan: rgba(244, 63, 94, 0.25);
   --border-neon-purple: rgba(167, 139, 250, 0.25);
@@ -83,6 +40,49 @@
   --dialog-bg: rgba(11, 19, 35, 0.97);
   --glow-opacity: 0.15;
   --grid-color: rgba(255, 255, 255, 0.01);
+  
+  /* Fonts */
+  --font-space: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-bezier: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+  /* LIGHT MODE OVERRIDES */
+  --bg-base: hsl(340, 25%, 96%);
+  --bg-surface: hsl(340, 15%, 92%);
+  --bg-card: hsla(340, 15%, 98%, 0.7);
+  --bg-card-hover: hsla(340, 15%, 98%, 0.92);
+  --border-glass: rgba(0, 0, 0, 0.08);
+  
+  --text-main: hsl(222, 47%, 12%);
+  --text-muted: hsl(222, 20%, 36%);
+  --text-dim: hsl(222, 15%, 54%);
+  
+  /* Theme Accent Colors */
+  --color-rose: hsl(330, 85%, 58%);
+  --color-violet: hsl(270, 80%, 60%);
+  --color-blue: hsl(215, 85%, 55%);
+  --color-teal: hsl(175, 75%, 38%);
+  
+  /* RGB values for transparent overlays */
+  --color-rose-rgb: 236, 72, 153;
+  --color-violet-rgb: 139, 92, 246;
+  --color-blue-rgb: 59, 130, 246;
+  --color-teal-rgb: 13, 148, 136;
+  
+  /* Neon border styles */
+  --border-neon-cyan: rgba(236, 72, 153, 0.2);
+  --border-neon-purple: rgba(139, 92, 246, 0.2);
+  --border-neon-green: rgba(13, 148, 136, 0.2);
+  
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --dialog-bg: rgba(255, 255, 255, 0.98);
+  --glow-opacity: 0.06;
+  --grid-color: rgba(0, 0, 0, 0.015);
 }
 
 /* =========================================================================
@@ -219,14 +219,14 @@ body {
 }
 
 .theme-toggle-btn:hover {
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--color-primary);
   border-color: var(--color-primary);
   box-shadow: 0 0 10px rgba(var(--color-rose-rgb), 0.15);
 }
 
-[data-theme="dark"] .theme-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.05);
+[data-theme="light"] .theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .theme-toggle-btn svg {
@@ -235,17 +235,17 @@ body {
 }
 
 .theme-toggle-btn .sun-icon {
-  display: none;
+  display: block;
 }
 .theme-toggle-btn .moon-icon {
-  display: block;
+  display: none;
 }
 
-[data-theme="dark"] .theme-toggle-btn .sun-icon {
-  display: block;
-}
-[data-theme="dark"] .theme-toggle-btn .moon-icon {
+[data-theme="light"] .theme-toggle-btn .sun-icon {
   display: none;
+}
+[data-theme="light"] .theme-toggle-btn .moon-icon {
+  display: block;
 }
 
 .nav-logo {
@@ -1098,7 +1098,7 @@ body {
 .project-dialog {
   border: 1px solid var(--border-glass);
   border-radius: 16px;
-  background: rgba(11, 19, 35, 0.96);
+  background: var(--dialog-bg);
   box-shadow: 
     0 24px 60px rgba(0, 0, 0, 0.6), 
     0 0 30px rgba(0, 242, 254, 0.08);
@@ -1187,10 +1187,18 @@ body {
   transition: all 0.2s ease;
 }
 
+[data-theme="light"] .dialog-close-btn {
+  background: rgba(0, 0, 0, 0.04);
+}
+
 .dialog-close-btn:hover {
   background: rgba(255, 255, 255, 0.12);
   color: var(--text-main);
   transform: rotate(90deg);
+}
+
+[data-theme="light"] .dialog-close-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .dialog-grid {

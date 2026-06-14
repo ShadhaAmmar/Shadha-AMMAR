@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 6. THEME TOGGLER (Default: Light Theme)
+  // 6. THEME TOGGLER (Default: Dark Theme)
   // =========================================================================
   const themeToggle = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  const savedTheme = localStorage.getItem('theme') || 'dark';
   
   // Set initial theme state
   document.documentElement.setAttribute('data-theme', savedTheme);
