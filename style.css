@@ -619,14 +619,13 @@ body {
 }
 
 /* Tech color overrides on hover */
-.project-icon-card:hover .vr-icon { color: var(--color-primary); border-color: var(--color-primary); box-shadow: 0 0 15px rgba(var(--color-rose-rgb), 0.2); background: rgba(var(--color-rose-rgb), 0.08); }
-.project-icon-card:hover .ar-icon { color: var(--color-secondary); border-color: var(--color-secondary); box-shadow: 0 0 15px rgba(var(--color-violet-rgb), 0.2); background: rgba(var(--color-violet-rgb), 0.08); }
-.project-icon-card:hover .matrix-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
-.project-icon-card:hover .jujutsu-icon { color: var(--color-secondary); border-color: var(--color-secondary); box-shadow: 0 0 15px rgba(var(--color-violet-rgb), 0.2); background: rgba(var(--color-violet-rgb), 0.08); }
-.project-icon-card:hover .game-2d-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
-.project-icon-card:hover .game-3d-icon { color: var(--color-primary); border-color: var(--color-primary); box-shadow: 0 0 15px rgba(var(--color-rose-rgb), 0.2); background: rgba(var(--color-rose-rgb), 0.08); }
-.project-icon-card:hover .traffic-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
 .project-icon-card:hover .peepchat-icon { color: var(--color-primary); border-color: var(--color-primary); box-shadow: 0 0 15px rgba(var(--color-rose-rgb), 0.2); background: rgba(var(--color-rose-rgb), 0.08); }
+.project-icon-card:hover .traffic-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
+.project-icon-card:hover .quant-trading-icon { color: var(--color-secondary); border-color: var(--color-secondary); box-shadow: 0 0 15px rgba(var(--color-violet-rgb), 0.2); background: rgba(var(--color-violet-rgb), 0.08); }
+.project-icon-card:hover .fire-icon { color: var(--color-primary); border-color: var(--color-primary); box-shadow: 0 0 15px rgba(var(--color-rose-rgb), 0.2); background: rgba(var(--color-rose-rgb), 0.08); }
+.project-icon-card:hover .pedestrian-icon { color: var(--color-secondary); border-color: var(--color-secondary); box-shadow: 0 0 15px rgba(var(--color-violet-rgb), 0.2); background: rgba(var(--color-violet-rgb), 0.08); }
+.project-icon-card:hover .face-emotion-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
+.project-icon-card:hover .directory-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
 .project-icon-card:hover .pfe-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
 
 .project-card-title {
