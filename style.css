@@ -361,7 +361,7 @@ body {
    ========================================================================= */
 .hero-container {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 0.7fr 1.3fr;
   gap: 40px;
   align-items: center;
 }
@@ -570,6 +570,7 @@ body {
 }
 
 .project-icon-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -627,6 +628,8 @@ body {
 .project-icon-card:hover .face-emotion-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
 .project-icon-card:hover .directory-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
 .project-icon-card:hover .pfe-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
+.project-icon-card:hover .eye-icon { color: var(--color-info); border-color: var(--color-info); box-shadow: 0 0 15px rgba(var(--color-blue-rgb), 0.2); background: rgba(var(--color-blue-rgb), 0.08); }
+.project-icon-card:hover .localpartner-icon { color: var(--color-success); border-color: var(--color-success); box-shadow: 0 0 15px rgba(var(--color-teal-rgb), 0.2); background: rgba(var(--color-teal-rgb), 0.08); }
 
 .project-card-title {
   font-family: var(--font-space);
@@ -649,7 +652,7 @@ body {
    ========================================================================= */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
@@ -1572,3 +1575,113 @@ body {
   color: var(--color-primary);
 }
 
+
+
+/* =========================================================================
+   MISES À JOUR : BADGE VIDÉO, MODALE EYE DISEASE & LOCALPARTNER
+   ========================================================================= */
+.video-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-space);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+  color: var(--color-success);
+  background: rgba(var(--color-teal-rgb), 0.1);
+  border: 1px solid rgba(var(--color-teal-rgb), 0.3);
+}
+
+.dialog-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 4px 0 20px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 6px;
+  border-radius: 8px;
+  background: rgba(var(--color-blue-rgb), 0.06);
+  border: 1px solid var(--border-glass);
+  text-align: center;
+}
+
+.metric-value {
+  font-family: var(--font-space);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dialog-subtitle {
+  font-family: var(--font-space);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 22px 0 10px;
+}
+
+.pipeline-list,
+.dialog-list {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.pipeline-list li,
+.dialog-list li {
+  margin-bottom: 6px;
+}
+
+.pipeline-list li::marker {
+  font-family: var(--font-space);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.dialog-list li::marker {
+  color: var(--color-primary);
+}
+
+#dialog-eye-disease .dialog-body strong,
+#dialog-localpartner .dialog-body strong { color: var(--text-main); }
+
+.dialog-body code {
+  font-size: 0.85em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(var(--color-violet-rgb), 0.1);
+  border: 1px solid var(--border-glass);
+  color: var(--color-secondary);
+}
+
+.dialog-disclaimer {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--color-primary);
+  border-radius: 6px;
+  background: rgba(var(--color-rose-rgb), 0.06);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 520px) {
+  .badge-status {
+    max-width: 100%;
+    width: auto;
+    text-align: left;
+  }
+}
